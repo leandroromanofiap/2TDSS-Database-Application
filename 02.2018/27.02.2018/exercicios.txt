@@ -1,0 +1,12 @@
+set serveroutput on;
+
+1) Desenvolver um bloco PL/SQL que exiba o nome e a idade armazenados em variáveis.
+
+
+2) Desenvolver um bloco PL/SQL que receba 5 valores e armazene a média dos 5 valores. Armazenar somente números inteiros.
+
+3) Desenvolver um bloco PL/SQL que receba o nome completo e armazene somente o primeiro nome.
+
+4) Desenvolver um bloco PL/SQL que receba um nome completo em letras minúsculas e imprima todos os nomes com a primeira letra em maiúsculo.
+
+5) Desenvolver um bloco PL/SQL que receba uma data no formato 'dd/mm/yyyy' e imprima o dia da semana.
