@@ -26,12 +26,14 @@ begin
                             v_funcionario.vl_salario_mes, 
                             v_funcionario.vl_salario_ano, 
                             SYSDATE);
+                    dbms_output.put_line('O departamento ' || v_funcionario.nm_depto || ' foi inserido!');        
             exception
                 when DUP_VAL_ON_INDEX then
                     update custos_depto SET
                         vl_salario_mes = v_funcionario.vl_salario_mes,
                         vl_salario_ano = v_funcionario.vl_salario_ano
                     where id_depto = v_funcionario.cd_depto;
+                    dbms_output.put_line('O departamento ' || v_funcionario.nm_depto || ' foi atualizado!');
             end;
         end loop;
     close c_funcionario;
