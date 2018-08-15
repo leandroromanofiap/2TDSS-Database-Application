@@ -5,7 +5,7 @@ p_cd_cliente  loc_cliente.cd_cliente%type
 is
   v_total number;
 begin
-  select AVG(p.vl_total)
+  select nvl(avg(p.vl_total), 0)
     into v_total
     from loc_cliente c 
   join loc_pedido_locacao p on p.cd_cliente = c.cd_cliente
